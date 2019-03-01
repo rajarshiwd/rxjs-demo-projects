@@ -1,0 +1,20 @@
+
+<div class="container">
+  <div class="text-center">
+    <h1>Demo Project of Rxjs Operators</h1>
+    <div class="col-12">
+        <div [formGroup]="searchFieldForm">
+          <input  class="form-control form-control-lg" 
+          type="text" formControlName="searchField">
+        </div>
+      </div>
+  </div>
+  <div class="row">
+      <div class="card col-4 p-2" style="width: 18rem;"  *ngFor="let user of usersData">
+          <img class="card-img-top" src="{{user.avatar_url}}" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">{{user.login}}</h5>
+          </div>
+        </div>
+  </div>
+</div>

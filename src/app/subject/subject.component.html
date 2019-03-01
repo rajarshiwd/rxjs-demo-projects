@@ -1,0 +1,26 @@
+<div class="container-fluid">
+    <div class="text-center">
+      <h1>Demo Project On Subjects</h1>
+      <div class="col-12">
+          <div [formGroup]="searchFieldForm">
+            <input  class="form-control form-control-lg" 
+            type="text" formControlName="searchField">
+            <button class="btn btn-info" (click)="sendMessage()"> Send Message</button>
+          </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+          <app-child-two></app-child-two>
+        </div>
+        <div class="col-4">
+            <app-child-one></app-child-one>
+          </div>
+          <div class="col-4">
+           <h1>Subject Component</h1>
+              <div>
+                <h4> {{message}} </h4>
+              </div>
+            </div>
+    </div>
+  </div>
